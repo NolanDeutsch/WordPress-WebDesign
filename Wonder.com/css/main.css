@@ -1,0 +1,202 @@
+/* COLORS */
+.green{color: green;}
+.bg-green{background-color: green;}
+
+/* DEFAULTS */
+:root {font-size: 16pt;}
+* {font-family: 'Open Sans', sans-serif;font-size: 1rem;}
+body,html {margin: 0;}
+img {max-width: 100%;}
+
+/* TREE STYLING */
+/* Home Page Styles */
+.jumbotron{
+  background-image:url(../img/poppy_hero.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 600px;
+  margin-bottom: 0;}
+
+@media(min-width: 768px){.jumbotron h1, .jumbotron .h1 {
+      font-size: 100px;}}
+
+.widget li {list-style: none;}
+
+/* Nav Styles */
+@media (min-width: 768px) {.navbar {border-radius: 0;}
+.navbar{margin-bottom: 0;}
+.navbar #menu-header-menu {list-style: none; padding: 10px 0;}
+.navbar #menu-header-menu li a {color: #fff; line-height: 20px; font-size: 20px;}
+.navbar #menu-header-menu li a:hover { font-size: 25px;  text-decoration: none;}
+/*@media (min-width: 768px){.navbar-nav>li, hover{color: #fff;}}*/
+
+.navbar li {display: inline; float: right; padding-left: 15px;}
+
+/*Main Content*/
+/* CONTENT AREA */
+.content-area {
+	background: #fff;
+	background: hsl(0, 0%, 100%);
+}
+.centered{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*About*/
+#about {
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    background: #8abf5e;
+	  background: hsl(93, 43%, 56%);
+    padding: 4rem 0;
+}
+/* Collection */
+#collection {
+    padding: 4rem 0;
+    background: hsl(0, 0%, 90%);
+}
+
+/* Blog */
+#blog {
+    padding: 4rem 0;
+}
+
+/* Courses */
+#courses {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+	  color: #fff;
+    color: hsl(0, 0%, 100%);
+	  background: #00497A;
+    background: hsl(204, 100%, 24%);
+}
+
+/* Contact */
+#contact {
+    padding: 4rem 0;
+}
+
+/*Footer Styles*/
+footer {background-color: #ccc}
+
+.post-thumbnail{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+article.contact-info{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*Contact*/
+.contact-content{
+  padding-bottom: 20px;
+}
+
+/* Articles */
+
+#blog {
+    padding: 4rem 0;
+    background: hsl(0, 0%, 90%);
+}
+.articles {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex:  row wrap;
+    -moz-box-flex:  row wrap;
+    -webkit-flex:  row wrap;
+    -ms-flex:  row wrap;
+    flex: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.articles li {
+    padding: 2rem 0 3rem;
+    width: 100%;
+}
+
+.articles-thumb {
+    max-width: 30%;
+    height: auto;
+    float: left;
+}
+
+.testimonial-text {
+    float: left;
+    width: 60%;
+    margin-left: 10%;
+}
+.articles-thumb img {
+    border-radius: 210px;
+    border: 5px solid #fff;
+}
+
+.articles-name {
+    font-weight: bold;
+    font-size: 24px;
+    font-size: 2.4rem;
+    margin: 1rem 0;
+}
+
+.articles-excerpt {
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+/* Articles RESPONSIVE */
+
+@media screen and (min-width: 650px) {
+    .articles li {
+        padding: 4rem 4rem;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .articles li {
+        width: 33.3333333333%;
+        padding: 2rem 4rem;
+        float: left;
+    }
+    .articles-thumb {
+        max-width: 210px;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .articles-text {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+
+    .articles-name {
+        text-align: center;
+    }
+}
+.indent {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1099px) {
+    .indent {
+        margin: 0;
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .indent {
+        margin: 0 2rem;
+    }
+}
